@@ -1,0 +1,115 @@
+.dashboard {
+  .c-bundle {
+    width: fit-content;
+    // width: 80vw;
+
+    background: #fff;
+    padding: 32px;
+
+    border-radius: 32px;
+    margin: 0 auto;
+    .title {
+      font-style: italic;
+      width: 100%;
+      text-transform: capitalize;
+      font-size: 2em;
+      border-bottom: 2px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 15px;
+      svg {
+        transition-duration: 0.3s;
+        cursor: pointer;
+        &:hover {
+          transition-duration: 0.3s;
+          padding: 1.1em;
+        }
+      }
+    }
+    .bundle {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .con-bundle {
+        margin: 15px 5px;
+        background-color: var(--app-container);
+        padding: 1em;
+        border-radius: 32px;
+        transition-duration: 0.3s;
+        width: 30%;
+        height: fit-content;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &:hover {
+          transition-duration: 0.3s;
+          background-color: #d4d1fa;
+        }
+
+        img {
+          width: 10em;
+        }
+        .info {
+          width: 100%;
+          .name,
+          .date,
+          .price,
+          .det {
+            .s {
+              text-transform: capitalize;
+              margin: 0 5px;
+            }
+            .ti {
+              color: #7891eb;
+              font-size: 1em;
+            }
+          }
+          .name {
+          }
+          .date {
+          }
+          .price {
+          }
+          .det {
+            max-width: 150px;
+          }
+        }
+        .user-count {
+          width: 100%;
+          .s {
+          }
+          .ti {
+            color: #7891eb;
+            font-size: 1.5em;
+          }
+        }
+        input {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .c-bundle {
+    .bundle {
+      .con-bundle {
+        margin: 15px 5px;
+        background-color: var(--app-container);
+        padding: 1em;
+        border-radius: 32px;
+        transition-duration: 0.3s;
+        height: fit-content;
+        cursor: pointer;
+        &:hover {
+          transition-duration: 0.3s;
+        }
+      }
+    }
+  }
+}
+.modal.show .modal-dialog {
+  position: relative;
+  top: 100px;
+}

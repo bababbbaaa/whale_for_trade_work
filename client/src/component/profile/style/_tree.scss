@@ -1,0 +1,47 @@
+.profile {
+  > div {
+    &.tree {
+      position: relative;
+      height: fit-content;
+      width: fit-content;
+      .title {
+        font-style: italic;
+        width: 100%;
+        text-transform: capitalize;
+        font-size: 2em;
+        border-bottom: 2px solid #ddd;
+      }
+      .list {
+        table {
+          width: 100%;
+          tr:nth-child(even) {
+            background-color: #d6eeee;
+          }
+          td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            font-family: "Source Sans Pro", sans-serif;
+
+            border-radius: 10px;
+            &.id {
+              border-right: none;
+            }
+            &.created {
+              border-left: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .profile {
+    > div {
+      &.tree {
+        width: 100%;
+      }
+    }
+  }
+}

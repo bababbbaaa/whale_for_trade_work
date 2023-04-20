@@ -1,0 +1,150 @@
+.profile {
+  > div {
+    &.user {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 50%;
+      font-family: "Source Sans Pro", sans-serif;
+      height: fit-content;
+
+      div.photo {
+        width: 30%;
+        margin: 5px auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+          border-radius: 23px;
+        }
+      }
+      .name-ed {
+        position: relative;
+        img {
+          width: 10em;
+          border-radius: 50%;
+          margin: 10px;
+        }
+        .edit-icon {
+          position: absolute;
+          // bottom: 0;
+          cursor: pointer;
+          right: -10%;
+          opacity: 0.5;
+          svg {
+            font-size: 0.7em;
+            position: absolute;
+            top: 0;
+          }
+          span {
+            margin: 0 3px;
+            text-transform: capitalize;
+            color: black;
+          }
+          &:hover {
+            opacity: 1;
+          }
+        }
+        .status {
+          position: absolute;
+          top: 0;
+          right: 0;
+          .online {
+            color: green;
+          }
+          .offline {
+            color: red;
+          }
+        }
+        // }
+      }
+      div.info {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        flex-wrap: wrap;
+        svg {
+          font-size: 0.7em;
+          position: absolute;
+          top: 0;
+          margin: 2px;
+          opacity: 0.5;
+          cursor: pointer;
+        }
+        .name {
+          width: 100%;
+        }
+        .name,
+        .email,
+        .number,
+        .balance {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .title {
+            text-transform: capitalize;
+            margin: 2px;
+            padding: 0 2px;
+          }
+          .test {
+            color: cornflowerblue;
+          }
+        }
+      }
+      div.count {
+        border-top: 2px solid #ddd;
+        margin: 2em 0 0;
+        padding: 1em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        text-transform: capitalize;
+        .line {
+          height: 100%;
+          width: 2px;
+          background-color: #ddd;
+          margin: 0 2px;
+        }
+      }
+    }
+  }
+}
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+@media (max-width: 900px) {
+  .profile {
+    > div {
+      &.user {
+        width: fit-content;
+      }
+    }
+  }
+}
+.modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  input {
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    padding: 5px 2px 3px 5px;
+  }
+  input[name="email"] {
+    flex: 1 0 130px;
+  }
+  input[name="username"] {
+    flex: 1 0 130px;
+  }
+  input[name="number"] {
+    flex: 1 0 130px;
+  }
+}

@@ -1,0 +1,62 @@
+.container-order {
+  position: relative;
+  margin: 5em auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.container-order > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container-order > div img {
+  width: 60%;
+  height: 90%;
+  border-radius: 20px;
+}
+.container-order > div .con {
+  margin: 0 3em;
+}
+.container-order > div .con .price .title,
+.container-order > div .con .win .title,
+.container-order > div .con .name .title,
+.container-order > div .con .category .title {
+  text-transform: capitalize;
+  margin: 0 3px;
+  font-size: 2em;
+}
+.container-order > div .con .price .co,
+.container-order > div .con .win .co,
+.container-order > div .con .name .co,
+.container-order > div .con .category .co {
+  font-size: 2.3em;
+  color: #0b5ed7;
+}
+
+@media (max-width: 800px) {
+  .container-order > div img {
+    width: 80%;
+    height: 60% !important;
+    border-radius: 20px;
+  }
+  .container-order > div .con .price,
+  .container-order > div .con .win,
+  .container-order > div .con .name,
+  .container-order > div .con .category {
+    width: 100%;
+  }
+  .container-order > div .con .price .title,
+  .container-order > div .con .win .title,
+  .container-order > div .con .name .title,
+  .container-order > div .con .category .title {
+    font-size: 1.6em;
+  }
+  .container-order > div .con .price .co,
+  .container-order > div .con .win .co,
+  .container-order > div .con .name .co,
+  .container-order > div .con .category .co {
+    font-size: 1.8em;
+  }
+}/*# sourceMappingURL=order.style.css.map */

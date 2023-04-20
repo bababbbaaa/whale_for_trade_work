@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;0,700;1,700&display=swap");
+.profile > div.point {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.profile > div.point .title {
+  font-style: italic;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 2em;
+  border-bottom: 2px solid #ddd;
+}
+.profile > div.point tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+.profile > div.point td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 10px;
+}
+.profile > div.point td.id {
+  border-right: none;
+}
+.profile > div.point td.created {
+  border-left: none;
+}
+
+.profile > div.user {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50%;
+  font-family: "Source Sans Pro", sans-serif;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.profile > div.user div.photo {
+  width: 30%;
+  margin: 5px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile > div.user div.photo img {
+  width: 100%;
+  border-radius: 23px;
+}
+.profile > div.user .name-ed {
+  position: relative;
+}
+.profile > div.user .name-ed img {
+  width: 10em;
+  border-radius: 50%;
+  margin: 10px;
+}
+.profile > div.user .name-ed .edit-icon {
+  position: absolute;
+  cursor: pointer;
+  right: -10%;
+  opacity: 0.5;
+}
+.profile > div.user .name-ed .edit-icon svg {
+  font-size: 0.7em;
+  position: absolute;
+  top: 0;
+}
+.profile > div.user .name-ed .edit-icon span {
+  margin: 0 3px;
+  text-transform: capitalize;
+  color: black;
+}
+.profile > div.user .name-ed .edit-icon:hover {
+  opacity: 1;
+}
+.profile > div.user .name-ed .status {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.profile > div.user .name-ed .status .online {
+  color: green;
+}
+.profile > div.user .name-ed .status .offline {
+  color: red;
+}
+.profile > div.user div.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  flex-wrap: wrap;
+}
+.profile > div.user div.info svg {
+  font-size: 0.7em;
+  position: absolute;
+  top: 0;
+  margin: 2px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.profile > div.user div.info .name {
+  width: 100%;
+}
+.profile > div.user div.info .name,
+.profile > div.user div.info .email,
+.profile > div.user div.info .number,
+.profile > div.user div.info .balance {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile > div.user div.info .name .title,
+.profile > div.user div.info .email .title,
+.profile > div.user div.info .number .title,
+.profile > div.user div.info .balance .title {
+  text-transform: capitalize;
+  margin: 2px;
+  padding: 0 2px;
+}
+.profile > div.user div.info .name .test,
+.profile > div.user div.info .email .test,
+.profile > div.user div.info .number .test,
+.profile > div.user div.info .balance .test {
+  color: cornflowerblue;
+}
+.profile > div.user div.count {
+  border-top: 2px solid #ddd;
+  margin: 2em 0 0;
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  text-transform: capitalize;
+}
+.profile > div.user div.count .line {
+  height: 100%;
+  width: 2px;
+  background-color: #ddd;
+  margin: 0 2px;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+@media (max-width: 900px) {
+  .profile > div.user {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+.modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.modal-body input {
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  padding: 5px 2px 3px 5px;
+}
+.modal-body input[name=email] {
+  flex: 1 0 130px;
+}
+.modal-body input[name=username] {
+  flex: 1 0 130px;
+}
+.modal-body input[name=number] {
+  flex: 1 0 130px;
+}
+
+.profile > div.tree {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.profile > div.tree .title {
+  font-style: italic;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 2em;
+  border-bottom: 2px solid #ddd;
+}
+.profile > div.tree .list table {
+  width: 100%;
+}
+.profile > div.tree .list table tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+.profile > div.tree .list table td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 10px;
+}
+.profile > div.tree .list table td.id {
+  border-right: none;
+}
+.profile > div.tree .list table td.created {
+  border-left: none;
+}
+
+@media (max-width: 900px) {
+  .profile > div.tree {
+    width: 100%;
+  }
+}
+:root {
+  --app-container: #f3f6fd;
+  --main-color: #1f1c2e;
+  --secondary-color: #4a4a4a;
+  --link-color: #1f1c2e;
+  --link-color-hover: #c3cff4;
+  --link-color-active: #fff;
+  --link-color-active-bg: #1f1c2e;
+  --projects-section: #fff;
+  --message-box-hover: #fafcff;
+  --message-box-border: #e9ebf0;
+  --more-list-bg: #fff;
+  --more-list-bg-hover: #f6fbff;
+  --more-list-shadow: rgba(209, 209, 209, 0.4);
+  --button-bg: #1f1c24;
+  --search-area-bg: #fff;
+  --star: #1ff1c2e;
+  --message-btn: #fff;
+  --color1: #282df5;
+  --color2: #b017d4;
+  --color3: #f7d11b;
+  --color4: #d47417;
+  --color5: #7683f5;
+}
+
+.dark:root {
+  --app-container: #1f1d2b;
+  --app-container: #111827;
+  --main-color: #fff;
+  --secondary-color: rgba(255, 255, 255, 0.8);
+  --projects-section: #1f2937;
+  --link-color: rgba(255, 255, 255, 0.8);
+  --link-color-hover: rgba(195, 207, 244, 0.1);
+  --link-color-active-bg: rgba(195, 207, 244, 0.2);
+  --button-bg: #1f2937;
+  --search-area-bg: #1f2937;
+  --message-box-hover: #243244;
+  --message-box-border: rgba(255, 255, 255, 0.1);
+  --star: #ffd92c;
+  --light-font: rgba(255, 255, 255, 0.8);
+  --more-list-bg: #2f3142;
+  --more-list-bg-hover: rgba(195, 207, 244, 0.1);
+  --more-list-shadow: rgba(195, 207, 244, 0.1);
+  --message-btn: rgba(195, 207, 244, 0.1);
+}
+
+.profile > div.transaction {
+  font-family: "Source Sans Pro", sans-serif;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.profile > div.transaction .title {
+  font-style: italic;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 2em;
+  border-bottom: 2px solid #ddd;
+}
+.profile > div.transaction .list > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile > div.transaction .list > div.with > div, .profile > div.transaction .list > div.dep > div, .profile > div.transaction .list > div.con > div, .profile > div.transaction .list > div.sub-b > div, .profile > div.transaction .list > div.sub-p > div {
+  padding: 0 5px;
+}
+.profile > div.transaction .list > div.with > div.prog, .profile > div.transaction .list > div.dep > div.prog, .profile > div.transaction .list > div.con > div.prog, .profile > div.transaction .list > div.sub-b > div.prog, .profile > div.transaction .list > div.sub-p > div.prog {
+  font-size: 18px;
+  font-weight: bold;
+}
+.profile > div.transaction .list > div.with {
+  background-color: var(--color5);
+  color: white;
+  margin: 5px 0;
+  border-radius: 15px;
+}
+
+.profile > div.point {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.profile > div.point .title {
+  font-style: italic;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 2em;
+  border-bottom: 2px solid #ddd;
+}
+.profile > div.point tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+.profile > div.point td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 10px;
+}
+.profile > div.point td.id {
+  border-right: none;
+}
+.profile > div.point td.created {
+  border-left: none;
+}
+
+.profile > div.bundle {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.profile > div.bundle .title {
+  font-style: italic;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 2em;
+  border-bottom: 2px solid #ddd;
+}
+.profile > div.bundle .bundle .bundle {
+  color: #3e98c7;
+  font-size: 1.3em;
+}
+.profile > div.bundle .timer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.profile > div.bundle .timer .s {
+  text-transform: capitalize;
+}
+.profile > div.bundle .timer .time {
+  font-size: 2em;
+  margin: 0 3px;
+}
+.profile .nav {
+  position: relative !important;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 12;
+  padding: 1em 0 0 0;
+  transform: translateX(0%);
+  width: 100%;
+}
+.profile .nav .page-item {
+  width: 50%;
+}
+.profile .nav .page-item a {
+  font-size: 1.1em;
+}
+
+@media (max-width: 1200px) {
+  .profile > div.bundle .title {
+    font-size: 1.4em;
+    border-bottom: 2px solid #ddd;
+  }
+  .profile > div.bundle .bundle .bundle {
+    color: #3e98c7;
+    font-size: 1em;
+  }
+  .profile > div.bundle .s {
+    text-transform: capitalize;
+  }
+  .profile > div.bundle .time {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 800) {
+  .profile > div {
+    width: 800px;
+  }
+  .profile > div.bundle {
+    max-width: -moz-fit-content !important;
+    max-width: fit-content !important;
+  }
+  .profile > div.bundle .title {
+    font-size: 1.4em;
+    border-bottom: 2px solid #ddd;
+  }
+  .profile > div.bundle .bundle .bundle {
+    color: #3e98c7;
+    font-size: 1em;
+  }
+  .profile > div.bundle .s {
+    text-transform: capitalize;
+  }
+  .profile > div.bundle .time {
+    font-size: 1.4em;
+  }
+  .CircularProgressbar {
+    display: block;
+    max-width: 300px;
+  }
+}
+.profile > div.url {
+  position: relative;
+  padding-top: 2em;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.profile > div.url a {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+}
+.profile > div.url .icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  opacity: 0.5;
+}
+.profile > div.url .icon:hover {
+  opacity: 1;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+.back {
+  background: #e8cbc0; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #636fa4, #e8cbc0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70em;
+}
+
+.profile.container {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow: hidden;
+  top: 7em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.profile.container > div {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1em 1em 2em;
+  width: 40%;
+  position: relative;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media (max-width: 1000px) {
+  .profile.container > div {
+    width: 100%;
+  }
+}/*# sourceMappingURL=profile.css.map */
